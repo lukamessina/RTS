@@ -8,11 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		D47C4E6E1C760ECB00301C62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47C4E6D1C760ECB00301C62 /* AppDelegate.swift */; };
-		D47C4E701C760ECB00301C62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47C4E6F1C760ECB00301C62 /* ViewController.swift */; };
+		D47C4E701C760ECB00301C62 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47C4E6F1C760ECB00301C62 /* WelcomeViewController.swift */; };
 		D47C4E731C760ECB00301C62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D47C4E711C760ECB00301C62 /* Main.storyboard */; };
 		D47C4E751C760ECB00301C62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D47C4E741C760ECB00301C62 /* Assets.xcassets */; };
 		D47C4E781C760ECB00301C62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D47C4E761C760ECB00301C62 /* LaunchScreen.storyboard */; };
 		D47C4E831C760ECB00301C62 /* RTSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47C4E821C760ECB00301C62 /* RTSTests.swift */; };
+		D47C4E8E1C760F1C00301C62 /* ReactivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47C4E8D1C760F1C00301C62 /* ReactivityViewController.swift */; };
+		D47C4E901C76197E00301C62 /* AccidentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47C4E8F1C76197E00301C62 /* AccidentsTableViewController.swift */; };
+		D47C4E921C761C8300301C62 /* UtopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47C4E911C761C8300301C62 /* UtopViewController.swift */; };
+		D47C4E941C761CA500301C62 /* UlohsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47C4E931C761CA500301C62 /* UlohsViewController.swift */; };
+		D47C4E961C761CBB00301C62 /* OvercoolingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47C4E951C761CBB00301C62 /* OvercoolingViewController.swift */; };
+		D47C4E981C76202300301C62 /* SimulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47C4E971C76202300301C62 /* SimulationViewController.swift */; };
+		D47C4E9A1C7622BF00301C62 /* AccidentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47C4E991C7622BF00301C62 /* AccidentsTableViewCell.swift */; };
+		D47C4E9C1C7631E000301C62 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47C4E9B1C7631E000301C62 /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +36,7 @@
 /* Begin PBXFileReference section */
 		D47C4E6A1C760ECB00301C62 /* RTS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RTS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D47C4E6D1C760ECB00301C62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D47C4E6F1C760ECB00301C62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D47C4E6F1C760ECB00301C62 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		D47C4E721C760ECB00301C62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D47C4E741C760ECB00301C62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D47C4E771C760ECB00301C62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +44,14 @@
 		D47C4E7E1C760ECB00301C62 /* RTSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RTSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D47C4E821C760ECB00301C62 /* RTSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTSTests.swift; sourceTree = "<group>"; };
 		D47C4E841C760ECB00301C62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D47C4E8D1C760F1C00301C62 /* ReactivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactivityViewController.swift; sourceTree = "<group>"; };
+		D47C4E8F1C76197E00301C62 /* AccidentsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccidentsTableViewController.swift; sourceTree = "<group>"; };
+		D47C4E911C761C8300301C62 /* UtopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtopViewController.swift; sourceTree = "<group>"; };
+		D47C4E931C761CA500301C62 /* UlohsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UlohsViewController.swift; sourceTree = "<group>"; };
+		D47C4E951C761CBB00301C62 /* OvercoolingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OvercoolingViewController.swift; sourceTree = "<group>"; };
+		D47C4E971C76202300301C62 /* SimulationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulationViewController.swift; sourceTree = "<group>"; };
+		D47C4E991C7622BF00301C62 /* AccidentsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccidentsTableViewCell.swift; sourceTree = "<group>"; };
+		D47C4E9B1C7631E000301C62 /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +94,16 @@
 			isa = PBXGroup;
 			children = (
 				D47C4E6D1C760ECB00301C62 /* AppDelegate.swift */,
-				D47C4E6F1C760ECB00301C62 /* ViewController.swift */,
+				D47C4E6F1C760ECB00301C62 /* WelcomeViewController.swift */,
+				D47C4E8D1C760F1C00301C62 /* ReactivityViewController.swift */,
 				D47C4E711C760ECB00301C62 /* Main.storyboard */,
+				D47C4E9B1C7631E000301C62 /* ResultsViewController.swift */,
+				D47C4E991C7622BF00301C62 /* AccidentsTableViewCell.swift */,
+				D47C4E971C76202300301C62 /* SimulationViewController.swift */,
+				D47C4E911C761C8300301C62 /* UtopViewController.swift */,
+				D47C4E931C761CA500301C62 /* UlohsViewController.swift */,
+				D47C4E951C761CBB00301C62 /* OvercoolingViewController.swift */,
+				D47C4E8F1C76197E00301C62 /* AccidentsTableViewController.swift */,
 				D47C4E741C760ECB00301C62 /* Assets.xcassets */,
 				D47C4E761C760ECB00301C62 /* LaunchScreen.storyboard */,
 				D47C4E791C760ECB00301C62 /* Info.plist */,
@@ -146,6 +170,7 @@
 				TargetAttributes = {
 					D47C4E691C760ECB00301C62 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = VU2276ZU78;
 					};
 					D47C4E7D1C760ECB00301C62 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -197,8 +222,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D47C4E701C760ECB00301C62 /* ViewController.swift in Sources */,
+				D47C4E701C760ECB00301C62 /* WelcomeViewController.swift in Sources */,
 				D47C4E6E1C760ECB00301C62 /* AppDelegate.swift in Sources */,
+				D47C4E941C761CA500301C62 /* UlohsViewController.swift in Sources */,
+				D47C4E9C1C7631E000301C62 /* ResultsViewController.swift in Sources */,
+				D47C4E901C76197E00301C62 /* AccidentsTableViewController.swift in Sources */,
+				D47C4E961C761CBB00301C62 /* OvercoolingViewController.swift in Sources */,
+				D47C4E981C76202300301C62 /* SimulationViewController.swift in Sources */,
+				D47C4E9A1C7622BF00301C62 /* AccidentsTableViewCell.swift in Sources */,
+				D47C4E8E1C760F1C00301C62 /* ReactivityViewController.swift in Sources */,
+				D47C4E921C761C8300301C62 /* UtopViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,7 +360,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = RTS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = KTH.RTS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -338,7 +373,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = RTS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = KTH.RTS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
