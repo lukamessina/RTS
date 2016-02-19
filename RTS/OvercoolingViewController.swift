@@ -14,6 +14,8 @@ class OvercoolingViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        // Set title
+        title = "Overcooling parameters"
     }
 
     override func didReceiveMemoryWarning() {

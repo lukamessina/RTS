@@ -14,6 +14,8 @@ class UlohsViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        // Set title
+        title = "ULOHS parameters"        
     }
 
     /*

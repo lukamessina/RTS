@@ -6,8 +6,8 @@ provides-nominal:
 provides-member:
 - ["C3RTS22AccidentsTableViewCell", ""]
 provides-dynamic-lookup:
-- "accidentLabel"
 - "setSelected"
+- "accidentLabel"
 - "awakeFromNib"
 depends-top-level:
 - "Bool"

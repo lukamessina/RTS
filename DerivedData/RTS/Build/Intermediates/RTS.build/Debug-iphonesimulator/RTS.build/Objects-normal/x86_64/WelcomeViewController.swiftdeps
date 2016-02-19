@@ -7,62 +7,123 @@ provides-member:
 - ["C3RTS21WelcomeViewController", ""]
 provides-dynamic-lookup:
 - "viewDidLoad"
+- "unwindToWelcomeView"
 depends-top-level:
+- !private "StringLiteralType"
+- !private "print"
+- "UIStoryboardSegue"
+- !private "ResultsViewController"
 - "UIViewController"
 - "WelcomeViewController"
 depends-member:
 - ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "print"]
+- !private ["PSs9AnyObject", "sourceViewController"]
+- ["PSs9AnyObject", "unwindToWelcomeView"]
 - ["PSs9AnyObject", "viewDidLoad"]
 - ["PSs9AnyObject", ""]
 - ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "print"]
+- !private ["PSs11CVarArgType", "sourceViewController"]
+- ["PSs11CVarArgType", "unwindToWelcomeView"]
 - ["PSs11CVarArgType", "viewDidLoad"]
 - ["PSs11CVarArgType", ""]
+- ["PSs28CustomDebugStringConvertible", "Some"]
 - ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "print"]
+- !private ["PSs23CustomStringConvertible", "sourceViewController"]
+- ["PSs23CustomStringConvertible", "unwindToWelcomeView"]
 - ["PSs23CustomStringConvertible", "viewDidLoad"]
 - ["PSs23CustomStringConvertible", ""]
 - ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "print"]
+- !private ["PSs9Equatable", "sourceViewController"]
+- ["PSs9Equatable", "unwindToWelcomeView"]
 - ["PSs9Equatable", "viewDidLoad"]
 - ["PSs9Equatable", ""]
 - ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "print"]
+- !private ["PSs8Hashable", "sourceViewController"]
+- ["PSs8Hashable", "unwindToWelcomeView"]
 - ["PSs8Hashable", "viewDidLoad"]
 - ["PSs8Hashable", ""]
 - ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "print"]
+- ["PSo8NSCoding", "unwindToWelcomeView"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
 - ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "print"]
+- ["PSo26NSExtensionRequestHandling", "unwindToWelcomeView"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
+- !private ["CSo8NSObject", "ResultsViewController"]
+- ["CSo8NSObject", "UIStoryboardSegue"]
 - ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "sourceViewController"]
+- ["CSo8NSObject", "unwindToWelcomeView"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "sourceViewController"]
+- ["PSo16NSObjectProtocol", "unwindToWelcomeView"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
+- ["PSs21NilLiteralConvertible", "Some"]
+- ["Sq", "Some"]
 - ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "print"]
+- ["PSo21UIAppearanceContainer", "unwindToWelcomeView"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
 - ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "print"]
+- ["PSo18UIContentContainer", "unwindToWelcomeView"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
 - ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "print"]
+- ["PSo18UIFocusEnvironment", "unwindToWelcomeView"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo11UIResponder", "ResultsViewController"]
+- ["CSo11UIResponder", "UIStoryboardSegue"]
 - ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "print"]
+- ["CSo11UIResponder", "unwindToWelcomeView"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "print"]
+- ["PSo16UIStateRestoring", "unwindToWelcomeView"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
+- !private ["CSo17UIStoryboardSegue", "sourceViewController"]
 - ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "print"]
+- ["PSo18UITraitEnvironment", "unwindToWelcomeView"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
+- !private ["CSo16UIViewController", "ResultsViewController"]
+- ["CSo16UIViewController", "UIStoryboardSegue"]
+- !private ["CSo16UIViewController", "deinit"]
 - ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "print"]
+- ["CSo16UIViewController", "unwindToWelcomeView"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
+- !private ["C3RTS21WelcomeViewController", "ResultsViewController"]
+- ["C3RTS21WelcomeViewController", "UIStoryboardSegue"]
 - ["C3RTS21WelcomeViewController", "deinit"]
 - ["C3RTS21WelcomeViewController", "init"]
+- !private ["C3RTS21WelcomeViewController", "print"]
+- ["C3RTS21WelcomeViewController", "unwindToWelcomeView"]
 - ["C3RTS21WelcomeViewController", "viewDidLoad"]
+- ["PSs12_Reflectable", "Some"]
 depends-nominal:
 - "PSs9AnyObject"
 - "PSs11CVarArgType"
+- "PSs28CustomDebugStringConvertible"
 - "PSs23CustomStringConvertible"
 - "PSs9Equatable"
 - "PSs8Hashable"
@@ -70,14 +131,18 @@ depends-nominal:
 - "PSo26NSExtensionRequestHandling"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- "PSs21NilLiteralConvertible"
+- "Sq"
 - "PSo21UIAppearanceContainer"
 - "PSo18UIContentContainer"
 - "PSo18UIFocusEnvironment"
 - "CSo11UIResponder"
 - "PSo16UIStateRestoring"
+- !private "CSo17UIStoryboardSegue"
 - "PSo18UITraitEnvironment"
 - "CSo16UIViewController"
 - "C3RTS21WelcomeViewController"
+- "PSs12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
@@ -88,4 +153,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "92fd4a9851a13f50cae2ffd2af1858ed"
+interface-hash: "daffdabe80d381567ca6ea515369c460"

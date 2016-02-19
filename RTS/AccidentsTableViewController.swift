@@ -65,6 +65,8 @@ class AccidentsTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         // Activate the segue corresponding to each accident
+        let selectedAccident = indexPath.row + 1
+        print("User selected accident \(selectedAccident)")
         switch indexPath.row {
         case 0:
             performSegueWithIdentifier("showUtopViewController", sender: self)

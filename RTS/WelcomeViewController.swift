@@ -31,5 +31,14 @@ class WelcomeViewController: UIViewController {
         
     }
     */
+    
+    // Unwind segue to come back from Results scene.
+    @IBAction func unwindToWelcomeView(sender: UIStoryboardSegue) {
+        if let sourceViewController = sender.sourceViewController as? ResultsViewController {
+            print("Going back to home")
+        }
+    }
+    
+    
 }
 

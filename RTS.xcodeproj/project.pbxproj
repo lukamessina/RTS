@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D4054AED1C76AEEA00AB3D8A /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4054AEC1C76AEEA00AB3D8A /* MessageUI.framework */; };
 		D47C4E6E1C760ECB00301C62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47C4E6D1C760ECB00301C62 /* AppDelegate.swift */; };
 		D47C4E701C760ECB00301C62 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47C4E6F1C760ECB00301C62 /* WelcomeViewController.swift */; };
 		D47C4E731C760ECB00301C62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D47C4E711C760ECB00301C62 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D4054AEC1C76AEEA00AB3D8A /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		D47C4E6A1C760ECB00301C62 /* RTS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RTS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D47C4E6D1C760ECB00301C62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D47C4E6F1C760ECB00301C62 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4054AED1C76AEEA00AB3D8A /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +78,7 @@
 		D47C4E611C760ECB00301C62 = {
 			isa = PBXGroup;
 			children = (
+				D4054AEC1C76AEEA00AB3D8A /* MessageUI.framework */,
 				D47C4E6C1C760ECB00301C62 /* RTS */,
 				D47C4E811C760ECB00301C62 /* RTSTests */,
 				D47C4E6B1C760ECB00301C62 /* Products */,
@@ -425,6 +429,7 @@
 				D47C4E891C760ECB00301C62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D47C4E8A1C760ECB00301C62 /* Build configuration list for PBXNativeTarget "RTSTests" */ = {
 			isa = XCConfigurationList;
@@ -433,6 +438,7 @@
 				D47C4E8C1C760ECB00301C62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

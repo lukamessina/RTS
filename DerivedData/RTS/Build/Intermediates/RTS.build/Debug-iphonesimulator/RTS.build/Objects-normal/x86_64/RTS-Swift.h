@@ -87,6 +87,7 @@ typedef int swift_int3  __attribute__((__ext_vector_type__(3)));
 typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import MessageUI;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -146,30 +147,64 @@ SWIFT_CLASS("_TtC3RTS25OvercoolingViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UITextField;
 
 SWIFT_CLASS("_TtC3RTS24ReactivityViewController")
-@interface ReactivityViewController : UIViewController
+@interface ReactivityViewController : UIViewController <UITextFieldDelegate>
+@property (nonatomic, weak) IBOutlet UITextField * __null_unspecified dopplerTextField;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified dopplerRangeLabel;
+@property (nonatomic, weak) IBOutlet UITextField * __null_unspecified coolantTextField;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified coolantRangeLabel;
+@property (nonatomic, weak) IBOutlet UITextField * __null_unspecified radialTextField;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified radialRangeLabel;
+@property (nonatomic, weak) IBOutlet UITextField * __null_unspecified axialTextField;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified axialRangeLabel;
+@property (nonatomic, readonly) double dopplerDefaultValue;
+@property (nonatomic, readonly) double dopplerMinimumValue;
+@property (nonatomic, readonly) double dopplerMaximumValue;
+@property (nonatomic, readonly) double coolantDefaultValue;
+@property (nonatomic, readonly) double coolantMinimumValue;
+@property (nonatomic, readonly) double coolantMaximumValue;
+@property (nonatomic, readonly) double radialDefaultValue;
+@property (nonatomic, readonly) double radialMinimumValue;
+@property (nonatomic, readonly) double radialMaximumValue;
+@property (nonatomic, readonly) double axialDefaultValue;
+@property (nonatomic, readonly) double axialMinimumValue;
+@property (nonatomic, readonly) double axialMaximumValue;
 - (void)viewDidLoad;
+- (void)setDefaultReactivityCoefficients;
+- (BOOL)textFieldShouldReturn:(UITextField * __nonnull)textField;
+- (void)textFieldDidEndEditing:(UITextField * __nonnull)textField;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class MFMailComposeViewController;
+@class UIStoryboardSegue;
+@class UIButton;
 
 SWIFT_CLASS("_TtC3RTS21ResultsViewController")
-@interface ResultsViewController : UIViewController
+@interface ResultsViewController : UIViewController <MFMailComposeViewControllerDelegate>
+@property (nonatomic, weak) IBOutlet UIButton * __null_unspecified backToHomeButton;
 - (void)viewDidLoad;
+- (MFMailComposeViewController * __nonnull)configuredMailComposeViewController;
+- (void)prepareForSegue:(UIStoryboardSegue * __nonnull)segue sender:(id __nullable)sender;
+- (IBAction)sendResultsByEmail:(UIButton * __nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIButton;
+@class UIProgressView;
 
 SWIFT_CLASS("_TtC3RTS24SimulationViewController")
 @interface SimulationViewController : UIViewController
-@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified temporaryBoomLabel;
+@property (nonatomic, weak) IBOutlet UIProgressView * __null_unspecified simulationProgressView;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified simulationProgressLabel;
 @property (nonatomic, weak) IBOutlet UIButton * __null_unspecified resultsButton;
+@property (nonatomic, weak) IBOutlet UIButton * __null_unspecified startButton;
+@property (nonatomic) NSInteger dummyCounter;
 - (void)viewDidLoad;
-- (IBAction)showTemporaryBoom:(UIButton * __nonnull)sender;
+- (IBAction)startDummySimulation:(UIButton * __nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -182,10 +217,25 @@ SWIFT_CLASS("_TtC3RTS19UlohsViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UISlider;
 
 SWIFT_CLASS("_TtC3RTS18UtopViewController")
-@interface UtopViewController : UIViewController
+@interface UtopViewController : UIViewController <UITextFieldDelegate>
+@property (nonatomic, weak) IBOutlet UISlider * __null_unspecified rampSlider;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified rampSliderLabel;
+@property (nonatomic, weak) IBOutlet UISlider * __null_unspecified transientDurationSlider;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified transientDurationLabel;
+@property (nonatomic, weak) IBOutlet UITextField * __null_unspecified reactivityInsertionTextField;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified reactivityInsertionRangeLabel;
+@property (nonatomic, readonly) double reactivityInsertionDefaultValue;
+@property (nonatomic, readonly) double reactivityInsertionMinimumValue;
+@property (nonatomic, readonly) double reactivityInsertionMaximumValue;
 - (void)viewDidLoad;
+- (void)setDefaultParameterValues;
+- (BOOL)textFieldShouldReturn:(UITextField * __nonnull)textField;
+- (void)textFieldDidEndEditing:(UITextField * __nonnull)textField;
+- (IBAction)rampSliderValueChanged:(UISlider * __nonnull)sender;
+- (IBAction)transientDurationSliderValueChanged:(UISlider * __nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -194,6 +244,7 @@ SWIFT_CLASS("_TtC3RTS18UtopViewController")
 SWIFT_CLASS("_TtC3RTS21WelcomeViewController")
 @interface WelcomeViewController : UIViewController
 - (void)viewDidLoad;
+- (IBAction)unwindToWelcomeView:(UIStoryboardSegue * __nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
