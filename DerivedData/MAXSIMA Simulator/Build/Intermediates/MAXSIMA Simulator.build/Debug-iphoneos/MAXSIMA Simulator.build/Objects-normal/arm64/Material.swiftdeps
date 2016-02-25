@@ -1,0 +1,192 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Material"
+provides-nominal:
+- "C17MAXSIMA_Simulator8Material"
+- "OC17MAXSIMA_Simulator8Material12MaterialType"
+provides-member:
+- ["C17MAXSIMA_Simulator8Material", ""]
+- ["OC17MAXSIMA_Simulator8Material12MaterialType", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "Double"
+- "Material"
+- !private "FloatLiteralType"
+- !private "Array"
+- !private "+"
+- !private "IntegerLiteralType"
+- "=="
+- !private "*"
+- "String"
+depends-member:
+- ["PSs9AnyObject", "Double"]
+- !private ["PSs9AnyObject", "conductivityCoefficients"]
+- !private ["PSs9AnyObject", "densityCoefficients"]
+- !private ["PSs9AnyObject", "heatCapacityCoefficients"]
+- ["PSs9AnyObject", ""]
+- !private ["Sa", "Element"]
+- ["Sa", "init"]
+- !private ["Sa", "subscript"]
+- !private ["PSs23ArrayLiteralConvertible", "Element"]
+- ["PSs23ArrayLiteralConvertible", "init"]
+- !private ["PSs23ArrayLiteralConvertible", "subscript"]
+- !private ["PSs22BidirectionalIndexType", "hashValue"]
+- !private ["PSs21BitwiseOperationsType", "hashValue"]
+- !private ["PSs11CVarArgType", "hashValue"]
+- !private ["PSs14CollectionType", "Element"]
+- !private ["PSs14CollectionType", "Generator"]
+- !private ["PSs14CollectionType", "Index"]
+- !private ["PSs14CollectionType", "SubSequence"]
+- !private ["PSs14CollectionType", "_Element"]
+- ["PSs14CollectionType", "init"]
+- !private ["PSs14CollectionType", "subscript"]
+- !private ["PSs10Comparable", "hashValue"]
+- !private ["PSs28CustomDebugStringConvertible", "Element"]
+- ["PSs28CustomDebugStringConvertible", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "subscript"]
+- !private ["PSs23CustomStringConvertible", "Element"]
+- !private ["PSs23CustomStringConvertible", "hashValue"]
+- ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "subscript"]
+- ["PSs9Equatable", "hashValue"]
+- ["PSs9Equatable", ""]
+- !private ["PSs16ForwardIndexType", "hashValue"]
+- !private ["PSs13GeneratorType", "Element"]
+- ["PSs8Hashable", "hashValue"]
+- ["PSs8Hashable", ""]
+- !private ["PSs9Indexable", "Element"]
+- !private ["PSs9Indexable", "Generator"]
+- !private ["PSs9Indexable", "Index"]
+- !private ["PSs9Indexable", "SubSequence"]
+- !private ["PSs9Indexable", "_Element"]
+- ["PSs9Indexable", "init"]
+- !private ["PSs9Indexable", "subscript"]
+- !private ["VSs17IndexingGenerator", "Element"]
+- !private ["Si", "hashValue"]
+- !private ["PSs21IntegerArithmeticType", "hashValue"]
+- !private ["PSs25IntegerLiteralConvertible", "hashValue"]
+- !private ["PSs11IntegerType", "hashValue"]
+- ["C17MAXSIMA_Simulator8Material", "Double"]
+- ["C17MAXSIMA_Simulator8Material", "MaterialType"]
+- ["C17MAXSIMA_Simulator8Material", "String"]
+- ["C17MAXSIMA_Simulator8Material", "calculateConductivity"]
+- ["C17MAXSIMA_Simulator8Material", "calculateDensity"]
+- ["C17MAXSIMA_Simulator8Material", "calculateHeatCapacity"]
+- ["C17MAXSIMA_Simulator8Material", "conductivityCoefficients"]
+- ["C17MAXSIMA_Simulator8Material", "deinit"]
+- ["C17MAXSIMA_Simulator8Material", "densityCoefficients"]
+- ["C17MAXSIMA_Simulator8Material", "heatCapacityCoefficients"]
+- ["C17MAXSIMA_Simulator8Material", "init"]
+- ["C17MAXSIMA_Simulator8Material", "materialType"]
+- ["C17MAXSIMA_Simulator8Material", "name"]
+- ["OC17MAXSIMA_Simulator8Material12MaterialType", "Cladding"]
+- ["OC17MAXSIMA_Simulator8Material12MaterialType", "Coolant"]
+- ["OC17MAXSIMA_Simulator8Material12MaterialType", "Fuel"]
+- ["OC17MAXSIMA_Simulator8Material12MaterialType", "GapGas"]
+- ["OC17MAXSIMA_Simulator8Material12MaterialType", "deinit"]
+- ["OC17MAXSIMA_Simulator8Material12MaterialType", "hashValue"]
+- !private ["PSs14MirrorPathType", "hashValue"]
+- !private ["PSs21MutableCollectionType", "Element"]
+- ["PSs21MutableCollectionType", "init"]
+- !private ["PSs21MutableCollectionType", "subscript"]
+- !private ["PSs16MutableIndexable", "Element"]
+- ["PSs16MutableIndexable", "init"]
+- !private ["PSs16MutableIndexable", "subscript"]
+- !private ["PSs16MutableSliceable", "Element"]
+- ["PSs16MutableSliceable", "init"]
+- !private ["PSs16MutableSliceable", "subscript"]
+- !private ["PSs21RandomAccessIndexType", "hashValue"]
+- !private ["PSs30RangeReplaceableCollectionType", "Element"]
+- ["PSs30RangeReplaceableCollectionType", "init"]
+- !private ["PSs30RangeReplaceableCollectionType", "subscript"]
+- !private ["PSs12SequenceType", "Element"]
+- !private ["PSs12SequenceType", "Generator"]
+- !private ["PSs12SequenceType", "Index"]
+- !private ["PSs12SequenceType", "SubSequence"]
+- !private ["PSs12SequenceType", "_Element"]
+- ["PSs12SequenceType", "init"]
+- !private ["PSs12SequenceType", "subscript"]
+- !private ["PSs17SignedIntegerType", "hashValue"]
+- !private ["PSs16SignedNumberType", "hashValue"]
+- !private ["VSs5Slice", "Generator"]
+- !private ["VSs5Slice", "Index"]
+- !private ["VSs5Slice", "SubSequence"]
+- !private ["VSs5Slice", "_Element"]
+- !private ["PSs10Strideable", "hashValue"]
+- !private ["PSs10_ArrayType", "Element"]
+- ["PSs10_ArrayType", "init"]
+- !private ["PSs10_ArrayType", "subscript"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "hashValue"]
+- !private ["PSs24_DestructorSafeContainer", "Element"]
+- ["PSs24_DestructorSafeContainer", "init"]
+- !private ["PSs24_DestructorSafeContainer", "subscript"]
+- !private ["PSs14_Incrementable", "hashValue"]
+- !private ["PSs22_IntegerArithmeticType", "hashValue"]
+- !private ["PSs12_IntegerType", "hashValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "Element"]
+- !private ["PSs21_ObjectiveCBridgeable", "hashValue"]
+- ["PSs21_ObjectiveCBridgeable", "init"]
+- !private ["PSs21_ObjectiveCBridgeable", "subscript"]
+- !private ["PSs22_RandomAccessAmbiguity", "hashValue"]
+- !private ["PSs12_Reflectable", "Element"]
+- !private ["PSs12_Reflectable", "hashValue"]
+- ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "subscript"]
+- !private ["PSs18_SignedIntegerType", "hashValue"]
+- !private ["PSs11_Strideable", "hashValue"]
+depends-nominal:
+- "PSs9AnyObject"
+- "Sa"
+- "PSs23ArrayLiteralConvertible"
+- !private "PSs22BidirectionalIndexType"
+- !private "PSs21BitwiseOperationsType"
+- !private "PSs11CVarArgType"
+- "PSs14CollectionType"
+- !private "PSs10Comparable"
+- "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- !private "PSs16ForwardIndexType"
+- !private "PSs13GeneratorType"
+- "PSs8Hashable"
+- "PSs9Indexable"
+- !private "VSs17IndexingGenerator"
+- !private "Si"
+- !private "PSs21IntegerArithmeticType"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSs11IntegerType"
+- "C17MAXSIMA_Simulator8Material"
+- "OC17MAXSIMA_Simulator8Material12MaterialType"
+- !private "PSs14MirrorPathType"
+- "PSs21MutableCollectionType"
+- "PSs16MutableIndexable"
+- "PSs16MutableSliceable"
+- !private "PSs21RandomAccessIndexType"
+- "PSs30RangeReplaceableCollectionType"
+- "PSs12SequenceType"
+- !private "PSs17SignedIntegerType"
+- !private "PSs16SignedNumberType"
+- !private "VSs5Slice"
+- !private "PSs10Strideable"
+- "PSs10_ArrayType"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
+- "PSs24_DestructorSafeContainer"
+- !private "PSs14_Incrementable"
+- !private "PSs22_IntegerArithmeticType"
+- !private "PSs12_IntegerType"
+- "PSs21_ObjectiveCBridgeable"
+- !private "PSs22_RandomAccessAmbiguity"
+- "PSs12_Reflectable"
+- !private "PSs18_SignedIntegerType"
+- !private "PSs11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+interface-hash: "b366e4153b87292ee1aacaa433938120"

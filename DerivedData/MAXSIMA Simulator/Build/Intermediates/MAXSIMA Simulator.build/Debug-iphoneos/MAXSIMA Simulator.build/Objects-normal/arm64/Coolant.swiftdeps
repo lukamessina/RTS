@@ -1,0 +1,266 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Coolant"
+provides-nominal:
+- "C17MAXSIMA_Simulator7Coolant"
+provides-member:
+- ["C17MAXSIMA_Simulator7Coolant", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "Double"
+- !private "IntegerLiteralType"
+- !private "StringLiteralType"
+- !private "Array"
+- !private "exp"
+- !private "/"
+- "String"
+- "Coolant"
+- !private "FloatLiteralType"
+- !private "*"
+- "Material"
+depends-member:
+- ["PSs9AnyObject", "Double"]
+- !private ["PSs9AnyObject", "MaterialType"]
+- ["PSs9AnyObject", "buyoancyHead"]
+- ["PSs9AnyObject", "calculateViscosity"]
+- ["PSs9AnyObject", "coldlegAverageTemperature"]
+- ["PSs9AnyObject", "coldlegMass"]
+- ["PSs9AnyObject", "coldpoolAverageTemperature"]
+- ["PSs9AnyObject", "coldpoolMass"]
+- !private ["PSs9AnyObject", "conductivityCoefficients"]
+- ["PSs9AnyObject", "coreAverageTemperature"]
+- ["PSs9AnyObject", "coreChannelDensity"]
+- ["PSs9AnyObject", "coreConductivity"]
+- ["PSs9AnyObject", "coreDeltaTemperature"]
+- ["PSs9AnyObject", "coreDensity"]
+- ["PSs9AnyObject", "coreHeatCapacity"]
+- ["PSs9AnyObject", "coreInletDensity"]
+- ["PSs9AnyObject", "coreInletTemperature"]
+- ["PSs9AnyObject", "coreMass"]
+- ["PSs9AnyObject", "coreMassFlow"]
+- ["PSs9AnyObject", "coreNusseltNumber"]
+- ["PSs9AnyObject", "coreOutletDensity"]
+- ["PSs9AnyObject", "coreOutletTemperature"]
+- ["PSs9AnyObject", "corePecletNumber"]
+- ["PSs9AnyObject", "corePrandtlNumber"]
+- ["PSs9AnyObject", "coreReynoldsNumber"]
+- ["PSs9AnyObject", "coreVelocity"]
+- ["PSs9AnyObject", "coreViscosity"]
+- !private ["PSs9AnyObject", "densityCoefficients"]
+- !private ["PSs9AnyObject", "exp"]
+- !private ["PSs9AnyObject", "heatCapacityCoefficients"]
+- ["PSs9AnyObject", "heatTransferFromCladding"]
+- ["PSs9AnyObject", "hotlegAverageTemperature"]
+- ["PSs9AnyObject", "hotlegMass"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "initialBuyoancyHead"]
+- ["PSs9AnyObject", "initialCoreMassFlow"]
+- ["PSs9AnyObject", "massFlowFactor"]
+- !private ["PSs9AnyObject", "materialType"]
+- !private ["PSs9AnyObject", "name"]
+- ["PSs9AnyObject", "steamGeneratorAverageTemperature"]
+- ["PSs9AnyObject", "steamGeneratorDeltaTemperature"]
+- ["PSs9AnyObject", "steamGeneratorInletTemperature"]
+- ["PSs9AnyObject", "steamGeneratorOutletTemperature"]
+- ["PSs9AnyObject", "viscosityCoefficients"]
+- ["PSs9AnyObject", ""]
+- !private ["Sa", "Element"]
+- ["Sa", "init"]
+- !private ["Sa", "subscript"]
+- !private ["PSs23ArrayLiteralConvertible", "Element"]
+- ["PSs23ArrayLiteralConvertible", "init"]
+- !private ["PSs23ArrayLiteralConvertible", "subscript"]
+- !private ["PSs14CollectionType", "Element"]
+- !private ["PSs14CollectionType", "Generator"]
+- !private ["PSs14CollectionType", "Index"]
+- !private ["PSs14CollectionType", "SubSequence"]
+- !private ["PSs14CollectionType", "_Element"]
+- ["PSs14CollectionType", "init"]
+- !private ["PSs14CollectionType", "subscript"]
+- ["C17MAXSIMA_Simulator7Coolant", "Double"]
+- !private ["C17MAXSIMA_Simulator7Coolant", "MaterialType"]
+- ["C17MAXSIMA_Simulator7Coolant", "String"]
+- ["C17MAXSIMA_Simulator7Coolant", "buyoancyHead"]
+- ["C17MAXSIMA_Simulator7Coolant", "calculateViscosity"]
+- ["C17MAXSIMA_Simulator7Coolant", "coldlegAverageTemperature"]
+- ["C17MAXSIMA_Simulator7Coolant", "coldlegMass"]
+- ["C17MAXSIMA_Simulator7Coolant", "coldpoolAverageTemperature"]
+- ["C17MAXSIMA_Simulator7Coolant", "coldpoolMass"]
+- !private ["C17MAXSIMA_Simulator7Coolant", "conductivityCoefficients"]
+- ["C17MAXSIMA_Simulator7Coolant", "coreAverageTemperature"]
+- ["C17MAXSIMA_Simulator7Coolant", "coreChannelDensity"]
+- ["C17MAXSIMA_Simulator7Coolant", "coreConductivity"]
+- ["C17MAXSIMA_Simulator7Coolant", "coreDeltaTemperature"]
+- ["C17MAXSIMA_Simulator7Coolant", "coreDensity"]
+- ["C17MAXSIMA_Simulator7Coolant", "coreHeatCapacity"]
+- ["C17MAXSIMA_Simulator7Coolant", "coreInletDensity"]
+- ["C17MAXSIMA_Simulator7Coolant", "coreInletTemperature"]
+- ["C17MAXSIMA_Simulator7Coolant", "coreMass"]
+- ["C17MAXSIMA_Simulator7Coolant", "coreMassFlow"]
+- ["C17MAXSIMA_Simulator7Coolant", "coreNusseltNumber"]
+- ["C17MAXSIMA_Simulator7Coolant", "coreOutletDensity"]
+- ["C17MAXSIMA_Simulator7Coolant", "coreOutletTemperature"]
+- ["C17MAXSIMA_Simulator7Coolant", "corePecletNumber"]
+- ["C17MAXSIMA_Simulator7Coolant", "corePrandtlNumber"]
+- ["C17MAXSIMA_Simulator7Coolant", "coreReynoldsNumber"]
+- ["C17MAXSIMA_Simulator7Coolant", "coreVelocity"]
+- ["C17MAXSIMA_Simulator7Coolant", "coreViscosity"]
+- ["C17MAXSIMA_Simulator7Coolant", "deinit"]
+- !private ["C17MAXSIMA_Simulator7Coolant", "densityCoefficients"]
+- !private ["C17MAXSIMA_Simulator7Coolant", "exp"]
+- !private ["C17MAXSIMA_Simulator7Coolant", "heatCapacityCoefficients"]
+- ["C17MAXSIMA_Simulator7Coolant", "heatTransferFromCladding"]
+- ["C17MAXSIMA_Simulator7Coolant", "hotlegAverageTemperature"]
+- ["C17MAXSIMA_Simulator7Coolant", "hotlegMass"]
+- ["C17MAXSIMA_Simulator7Coolant", "init"]
+- ["C17MAXSIMA_Simulator7Coolant", "initialBuyoancyHead"]
+- ["C17MAXSIMA_Simulator7Coolant", "initialCoreMassFlow"]
+- ["C17MAXSIMA_Simulator7Coolant", "massFlowFactor"]
+- !private ["C17MAXSIMA_Simulator7Coolant", "materialType"]
+- !private ["C17MAXSIMA_Simulator7Coolant", "name"]
+- ["C17MAXSIMA_Simulator7Coolant", "steamGeneratorAverageTemperature"]
+- ["C17MAXSIMA_Simulator7Coolant", "steamGeneratorDeltaTemperature"]
+- ["C17MAXSIMA_Simulator7Coolant", "steamGeneratorInletTemperature"]
+- ["C17MAXSIMA_Simulator7Coolant", "steamGeneratorOutletTemperature"]
+- ["C17MAXSIMA_Simulator7Coolant", "viscosityCoefficients"]
+- !private ["PSs28CustomDebugStringConvertible", "Element"]
+- ["PSs28CustomDebugStringConvertible", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "subscript"]
+- !private ["PSs23CustomStringConvertible", "Element"]
+- ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "subscript"]
+- !private ["Sd", "deinit"]
+- !private ["PSs9Equatable", "Coolant"]
+- !private ["Sf", "deinit"]
+- !private ["PSs13GeneratorType", "Element"]
+- !private ["PSs8Hashable", "Coolant"]
+- !private ["PSs9Indexable", "Element"]
+- !private ["PSs9Indexable", "Generator"]
+- !private ["PSs9Indexable", "Index"]
+- !private ["PSs9Indexable", "SubSequence"]
+- !private ["PSs9Indexable", "_Element"]
+- ["PSs9Indexable", "init"]
+- !private ["PSs9Indexable", "subscript"]
+- !private ["VSs17IndexingGenerator", "Element"]
+- ["C17MAXSIMA_Simulator8Material", "Double"]
+- !private ["C17MAXSIMA_Simulator8Material", "MaterialType"]
+- ["C17MAXSIMA_Simulator8Material", "String"]
+- ["C17MAXSIMA_Simulator8Material", "buyoancyHead"]
+- ["C17MAXSIMA_Simulator8Material", "calculateViscosity"]
+- ["C17MAXSIMA_Simulator8Material", "coldlegAverageTemperature"]
+- ["C17MAXSIMA_Simulator8Material", "coldlegMass"]
+- ["C17MAXSIMA_Simulator8Material", "coldpoolAverageTemperature"]
+- ["C17MAXSIMA_Simulator8Material", "coldpoolMass"]
+- !private ["C17MAXSIMA_Simulator8Material", "conductivityCoefficients"]
+- ["C17MAXSIMA_Simulator8Material", "coreAverageTemperature"]
+- ["C17MAXSIMA_Simulator8Material", "coreChannelDensity"]
+- ["C17MAXSIMA_Simulator8Material", "coreConductivity"]
+- ["C17MAXSIMA_Simulator8Material", "coreDeltaTemperature"]
+- ["C17MAXSIMA_Simulator8Material", "coreDensity"]
+- ["C17MAXSIMA_Simulator8Material", "coreHeatCapacity"]
+- ["C17MAXSIMA_Simulator8Material", "coreInletDensity"]
+- ["C17MAXSIMA_Simulator8Material", "coreInletTemperature"]
+- ["C17MAXSIMA_Simulator8Material", "coreMass"]
+- ["C17MAXSIMA_Simulator8Material", "coreMassFlow"]
+- ["C17MAXSIMA_Simulator8Material", "coreNusseltNumber"]
+- ["C17MAXSIMA_Simulator8Material", "coreOutletDensity"]
+- ["C17MAXSIMA_Simulator8Material", "coreOutletTemperature"]
+- ["C17MAXSIMA_Simulator8Material", "corePecletNumber"]
+- ["C17MAXSIMA_Simulator8Material", "corePrandtlNumber"]
+- ["C17MAXSIMA_Simulator8Material", "coreReynoldsNumber"]
+- ["C17MAXSIMA_Simulator8Material", "coreVelocity"]
+- ["C17MAXSIMA_Simulator8Material", "coreViscosity"]
+- !private ["C17MAXSIMA_Simulator8Material", "densityCoefficients"]
+- !private ["C17MAXSIMA_Simulator8Material", "exp"]
+- !private ["C17MAXSIMA_Simulator8Material", "heatCapacityCoefficients"]
+- ["C17MAXSIMA_Simulator8Material", "heatTransferFromCladding"]
+- ["C17MAXSIMA_Simulator8Material", "hotlegAverageTemperature"]
+- ["C17MAXSIMA_Simulator8Material", "hotlegMass"]
+- ["C17MAXSIMA_Simulator8Material", "init"]
+- ["C17MAXSIMA_Simulator8Material", "initialBuyoancyHead"]
+- ["C17MAXSIMA_Simulator8Material", "initialCoreMassFlow"]
+- ["C17MAXSIMA_Simulator8Material", "massFlowFactor"]
+- !private ["C17MAXSIMA_Simulator8Material", "materialType"]
+- !private ["C17MAXSIMA_Simulator8Material", "name"]
+- ["C17MAXSIMA_Simulator8Material", "steamGeneratorAverageTemperature"]
+- ["C17MAXSIMA_Simulator8Material", "steamGeneratorDeltaTemperature"]
+- ["C17MAXSIMA_Simulator8Material", "steamGeneratorInletTemperature"]
+- ["C17MAXSIMA_Simulator8Material", "steamGeneratorOutletTemperature"]
+- ["C17MAXSIMA_Simulator8Material", "viscosityCoefficients"]
+- ["C17MAXSIMA_Simulator8Material", ""]
+- !private ["OC17MAXSIMA_Simulator8Material12MaterialType", "Coolant"]
+- !private ["PSs21MutableCollectionType", "Element"]
+- ["PSs21MutableCollectionType", "init"]
+- !private ["PSs21MutableCollectionType", "subscript"]
+- !private ["PSs16MutableIndexable", "Element"]
+- ["PSs16MutableIndexable", "init"]
+- !private ["PSs16MutableIndexable", "subscript"]
+- !private ["PSs16MutableSliceable", "Element"]
+- ["PSs16MutableSliceable", "init"]
+- !private ["PSs16MutableSliceable", "subscript"]
+- !private ["PSs30RangeReplaceableCollectionType", "Element"]
+- ["PSs30RangeReplaceableCollectionType", "init"]
+- !private ["PSs30RangeReplaceableCollectionType", "subscript"]
+- !private ["PSs12SequenceType", "Element"]
+- !private ["PSs12SequenceType", "Generator"]
+- !private ["PSs12SequenceType", "Index"]
+- !private ["PSs12SequenceType", "SubSequence"]
+- !private ["PSs12SequenceType", "_Element"]
+- ["PSs12SequenceType", "init"]
+- !private ["PSs12SequenceType", "subscript"]
+- !private ["VSs5Slice", "Generator"]
+- !private ["VSs5Slice", "Index"]
+- !private ["VSs5Slice", "SubSequence"]
+- !private ["VSs5Slice", "_Element"]
+- !private ["VSs12StaticString", "deinit"]
+- !private ["PSs10_ArrayType", "Element"]
+- ["PSs10_ArrayType", "init"]
+- !private ["PSs10_ArrayType", "subscript"]
+- !private ["PSs24_DestructorSafeContainer", "Element"]
+- ["PSs24_DestructorSafeContainer", "init"]
+- !private ["PSs24_DestructorSafeContainer", "subscript"]
+- !private ["PSs21_ObjectiveCBridgeable", "Element"]
+- ["PSs21_ObjectiveCBridgeable", "init"]
+- !private ["PSs21_ObjectiveCBridgeable", "subscript"]
+- !private ["PSs12_Reflectable", "Element"]
+- ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "subscript"]
+depends-nominal:
+- "PSs9AnyObject"
+- "Sa"
+- "PSs23ArrayLiteralConvertible"
+- "PSs14CollectionType"
+- "C17MAXSIMA_Simulator7Coolant"
+- "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- !private "Sd"
+- !private "PSs9Equatable"
+- !private "Sf"
+- !private "PSs13GeneratorType"
+- !private "PSs8Hashable"
+- "PSs9Indexable"
+- !private "VSs17IndexingGenerator"
+- "C17MAXSIMA_Simulator8Material"
+- !private "OC17MAXSIMA_Simulator8Material12MaterialType"
+- "PSs21MutableCollectionType"
+- "PSs16MutableIndexable"
+- "PSs16MutableSliceable"
+- "PSs30RangeReplaceableCollectionType"
+- "PSs12SequenceType"
+- !private "VSs5Slice"
+- !private "VSs12StaticString"
+- "PSs10_ArrayType"
+- "PSs24_DestructorSafeContainer"
+- "PSs21_ObjectiveCBridgeable"
+- "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+interface-hash: "cc6b89bdfba75de01c04e860a7179b6a"

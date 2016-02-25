@@ -18,12 +18,10 @@ class UtopViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var reactivityInsertionTextField: UITextField!
     @IBOutlet weak var reactivityInsertionRangeLabel: UILabel!
     
-    var reactivityInsertion: Double?
-    let reactivityInsertionDefaultValue = 0.2
     let reactivityInsertionMinimumValue = 0.0
-    let reactivityInsertionMaximumValue = 1.0
-    var rampInterval: Double?
-    var transientDuration: Double?
+    let reactivityInsertionMaximumValue = 10.0
+    
+    var userSettings: UserSettings!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,21 +31,26 @@ class UtopViewController: UIViewController, UITextFieldDelegate {
         
         // Set title
         title = "UTOP parameters"
-        // Set default parameter values
+        
+        // Load saved user settings.
+        userSettings = loadUserSettings()
+
+        // Set default parameter values and range labels.
         setDefaultParameterValues()
-        reactivityInsertionTextField.text = "\(reactivityInsertion!)"
-        reactivityInsertionRangeLabel.text = "Range: [ \(reactivityInsertionMinimumValue), \(reactivityInsertionMaximumValue) ]"
+        reactivityInsertionRangeLabel.text = "Range: [ \(Int (reactivityInsertionMinimumValue)), \(Int (reactivityInsertionMaximumValue)) ]"
+        
     }
     
-    // Default parameter settings
+    // Set default parameter settings.
     func setDefaultParameterValues () {
-        reactivityInsertion = reactivityInsertionDefaultValue
-        rampInterval = 1
+        userSettings.reactivityInsertionFractionBeta = userSettings.defaultReactivityInsertionFractionBeta
+        reactivityInsertionTextField.text = "\(userSettings.reactivityInsertionFractionBeta!)"
+        userSettings.rampInterval = 1
         rampSlider.value = 1
         rampSliderLabel.text = "1 s"
-        transientDuration = 1800
-        transientDurationSlider.value = 1800
-        transientDurationLabel.text = "1800 s"
+        userSettings.transientDuration = 1
+        transientDurationSlider.value = 1
+        transientDurationLabel.text = "1 s"
     }
     
     /*
@@ -68,39 +71,58 @@ class UtopViewController: UIViewController, UITextFieldDelegate {
     // When finished editing, check if input value is inside limits; otherwise, reset the default value.
     func textFieldDidEndEditing(textField: UITextField) {
         
-        reactivityInsertion = Double (reactivityInsertionTextField.text!)
+        userSettings.reactivityInsertionFractionBeta = Double (reactivityInsertionTextField.text!)
         
-        if reactivityInsertion >= reactivityInsertionMinimumValue && reactivityInsertion <= reactivityInsertionMaximumValue {
-            print("\(reactivityInsertion!)")
-        }
-        else {
-            reactivityInsertionTextField.text = String (reactivityInsertionDefaultValue)
+        if userSettings.reactivityInsertionFractionBeta < reactivityInsertionMinimumValue || userSettings.reactivityInsertionFractionBeta > reactivityInsertionMaximumValue {
+            reactivityInsertionTextField.text = String (userSettings.defaultReactivityInsertionFractionBeta)
             print("Value out of range")
         }
         
     }
 
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    // Pass the selected type of accident to the SimulationViewController
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        // Save the user settings
+        saveUserSettings()
     }
-    */
+    
     
     // MARK: Actions
+    
+    // Control ramp interval slider movements.
     @IBAction func rampSliderValueChanged(sender: UISlider) {
         let currentSliderValue = Double(round(10*sender.value))/10
-        rampInterval = currentSliderValue
+        userSettings.rampInterval = currentSliderValue
         rampSliderLabel.text = "\(currentSliderValue) s"
     }
     
+    // Control transient duration slider movements.
     @IBAction func transientDurationSliderValueChanged(sender: UISlider) {
-        let currentSliderValue = Int(round(sender.value/100)*100)
-        transientDuration = Double(currentSliderValue)
+        // let currentSliderValue = Int(round(sender.value/100)*100)
+        let currentSliderValue = Int(sender.value)
+        userSettings.transientDuration = Double(currentSliderValue)
         transientDurationLabel.text = "\(currentSliderValue) s"
     }
 
+    // Reset default parameter values if button is pressed.
+    @IBAction func reapplySetDefaultParameterValues(sender: UIButton) {
+        setDefaultParameterValues()
+    }
+    
+    // MARK: NSCoding
+    
+    // Save the user settings
+    func saveUserSettings() {
+        let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(userSettings, toFile: UserSettings.ArchiveURL.path!)
+        if !isSuccessfulSave {
+            print("Failed to save user settings...")
+        }
+    }
+    
+    func loadUserSettings() -> UserSettings {
+        return NSKeyedUnarchiver.unarchiveObjectWithFile(UserSettings.ArchiveURL.path!) as! UserSettings
+    }
+    
 }

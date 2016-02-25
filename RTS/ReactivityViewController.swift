@@ -20,22 +20,9 @@ class ReactivityViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var axialTextField: UITextField!
     @IBOutlet weak var axialRangeLabel: UILabel!
     
-    var dopplerCoefficient: Double?
-    let dopplerDefaultValue = 0.0
-    let dopplerMinimumValue = -0.2
-    let dopplerMaximumValue = 0.2
-    var coolantCoefficient: Double?
-    let coolantDefaultValue = -0.43
-    let coolantMinimumValue = -2.0
-    let coolantMaximumValue = 2.0
-    var radialCoefficient: Double?
-    let radialDefaultValue = -1.54
-    let radialMinimumValue = -2.0
-    let radialMaximumValue = 2.0
-    var axialCoefficient: Double?
-    let axialDefaultValue = -0.70
-    let axialMinimumValue = -2.0
-    let axialMaximumValue = 2.0
+    var selectedReactor: String?
+    var userEmailAddress: String? 
+    var userSettings: UserSettings!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,23 +35,33 @@ class ReactivityViewController: UIViewController, UITextFieldDelegate {
 
         // Set title
         title = "Set reactivity parameters"
+        
+        // Create the user settings object
+        print("Selected reactor is \(selectedReactor!).")
+        userSettings = UserSettings (reactorName: selectedReactor!)
+        print("I confirm that selected reactor is \(userSettings.selectedReactor)")
+        
+        // Save user email address
+        userSettings.userEmailAddress = userEmailAddress!
+        print("User email address: \(userSettings.userEmailAddress)")
+        
         // Set default values for text fields and suggest ranges.
         setDefaultReactivityCoefficients()
-        dopplerTextField.text = "\(dopplerCoefficient!)"
-        dopplerRangeLabel.text = "Range: [ \(dopplerMinimumValue), \(dopplerMaximumValue) ]"
-        coolantTextField.text = "\(coolantCoefficient!)"
-        coolantRangeLabel.text = "Range: [ \(coolantMinimumValue), \(coolantMaximumValue) ]"
-        radialTextField.text = "\(radialCoefficient!)"
-        radialRangeLabel.text = "Range: [ \(radialMinimumValue), \(radialMaximumValue) ]"
-        axialTextField.text = "\(axialCoefficient!)"
-        axialRangeLabel.text = "Range: [ \(axialMinimumValue), \(axialMaximumValue) ]"
+        dopplerRangeLabel.text = "Range: [ \(Int (userSettings.defaultReactivityMinimumValues[0])), \(Int (userSettings.defaultReactivityMaximumValues[0])) ]"
+        coolantRangeLabel.text = "Range: [ \(Int (userSettings.defaultReactivityMinimumValues[1])), \(Int (userSettings.defaultReactivityMaximumValues[1])) ]"
+        radialRangeLabel.text = "Range: [ \(Int (userSettings.defaultReactivityMinimumValues[2])), \(Int (userSettings.defaultReactivityMaximumValues[2])) ]"
+        axialRangeLabel.text = "Range: [ \(Int (userSettings.defaultReactivityMinimumValues[3])), \(Int (userSettings.defaultReactivityMaximumValues[3])) ]"
+
     }
     
     func setDefaultReactivityCoefficients() {
-        dopplerCoefficient = dopplerDefaultValue
-        coolantCoefficient = coolantDefaultValue
-        radialCoefficient = radialDefaultValue
-        axialCoefficient = axialDefaultValue
+        
+        userSettings.reactivityCoefficients = userSettings.defaultReactivityCoefficients
+        dopplerTextField.text = "\(userSettings.reactivityCoefficients[0])"
+        coolantTextField.text = "\(userSettings.reactivityCoefficients[1])"
+        radialTextField.text = "\(userSettings.reactivityCoefficients[2])"
+        axialTextField.text = "\(userSettings.reactivityCoefficients[3])"
+
     }
     
     // MARK: UITextFieldDelegate
@@ -75,46 +72,27 @@ class ReactivityViewController: UIViewController, UITextFieldDelegate {
         return true
     }
 
-    // When finished editing, check if input value is inside limits; otherwise, reset the default value.
+    // When finished editing, store the values after checking if input value is inside limits; otherwise, reset the default value.
     func textFieldDidEndEditing(textField: UITextField) {
+ 
+        userSettings.reactivityCoefficients = [ Double (dopplerTextField.text!)!, Double (coolantTextField.text!)!, Double (radialTextField.text!)!, Double (axialTextField.text!)!]
         
-        dopplerCoefficient = Double (dopplerTextField.text!)
-        coolantCoefficient = Double (coolantTextField.text!)
-        radialCoefficient = Double (radialTextField.text!)
-        axialCoefficient = Double (axialTextField.text!)
-        
-        if dopplerCoefficient >= dopplerMinimumValue && dopplerCoefficient <= dopplerMaximumValue {
-            print("\(dopplerCoefficient!)")
-        }
-        else {
-            dopplerTextField.text = String (dopplerDefaultValue)
-            print("Value out of range")
+        if userSettings.reactivityCoefficients[0] < userSettings.defaultReactivityMinimumValues[0] || userSettings.reactivityCoefficients[0] > userSettings.defaultReactivityMaximumValues[0] {
+            dopplerTextField.text = String (userSettings.defaultReactivityCoefficients[0])
         }
         
-        if coolantCoefficient >= coolantMinimumValue && coolantCoefficient <= coolantMaximumValue {
-            print("\(coolantCoefficient!)")
-        }
-        else {
-            coolantTextField.text = String (coolantDefaultValue)
-            print("Value out of range")
+        if userSettings.reactivityCoefficients[1] < userSettings.defaultReactivityMinimumValues[1] || userSettings.reactivityCoefficients[1] > userSettings.defaultReactivityMaximumValues[1] {
+            coolantTextField.text = String (userSettings.defaultReactivityCoefficients[1])
         }
         
-        if radialCoefficient >= radialMinimumValue && radialCoefficient <= radialMaximumValue {
-            print("\(radialCoefficient!)")
-        }
-        else {
-            radialTextField.text = String (radialDefaultValue)
-            print("Value out of range")
+        if userSettings.reactivityCoefficients[2] < userSettings.defaultReactivityMinimumValues[2] || userSettings.reactivityCoefficients[2] > userSettings.defaultReactivityMaximumValues[2] {
+            radialTextField.text = String (userSettings.defaultReactivityCoefficients[2])
         }
         
-        if axialCoefficient >= axialMinimumValue && axialCoefficient <= axialMaximumValue {
-            print("\(axialCoefficient!)")
+        if userSettings.reactivityCoefficients[3] < userSettings.defaultReactivityMinimumValues[3] || userSettings.reactivityCoefficients[3] > userSettings.defaultReactivityMaximumValues[3] {
+            axialTextField.text = String (userSettings.defaultReactivityCoefficients[3])
         }
-        else {
-            axialTextField.text = String (axialDefaultValue)
-            print("Value out of range")
-        }
-        
+
     }
     
     /*
@@ -124,15 +102,29 @@ class ReactivityViewController: UIViewController, UITextFieldDelegate {
     }
     */
 
-    /*
+    // MARK: Actions
+    
+    // Set default values for the reactivity coefficients
+    @IBAction func setDefaultReactivityValues(sender: UIButton) {
+        setDefaultReactivityCoefficients()
+    }
+
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
+        // Save the user settings
+        saveUserSettings()
         // Pass the selected object to the new view controller.
     }
-    */
 
+    // MARK: NSCoding
+    
+    // Save the user settings
+    func saveUserSettings() {
+        let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(userSettings, toFile: UserSettings.ArchiveURL.path!)
+        if !isSuccessfulSave {
+            print("Failed to save user settings...")
+        }
+    }
     
 }

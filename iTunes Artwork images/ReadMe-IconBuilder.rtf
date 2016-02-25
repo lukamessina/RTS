@@ -1,0 +1,32 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf130
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11860\viewh13740\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b\fs30 \cf0 Installing icon files in an app using Xcode and Image Assets:\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\b0\fs28 \cf0 \
+Open your app project in Xcode 5 or later.\
+Make sure the Project Navigator is visible in the left sidebar.\
+\
+Check that "Images.xcassets" or \'93Assets.xcassets\'94 is displayed in the Project Navigator for the relevant app.\
+\
+If the project was created using an easier version of Xcode, this may not appear.\
+To create it, select the project at the top of the Project Navigator.\
+Make sure you are editing the target and go to the General tab.\
+In the "App Icons" section, click the "Use Asset Catalog" button.\
+The "Images.xcassets" or \'93Assets.xcassets\'94 folder will be created and any existing icons will be migrated to the new structure.\
+\
+When Icon Builder creates your icon files, it installs them into the "Images.xcassets" or \'93Assets.xcassets\'94 folder in a section called "AppIcon". Icons for Watch apps are called \'93AppIcon-Watch\'94 to make it easier to distinguish when allocating them.\
+If you already have icons in the project, Icon Builder will not over-write them, but will create "AppIcon-1", "AppIcon-2" etc.\
+\
+If you saved the icon set before installing Xcode or you saved the icons outside your Xcode project folder, drag the "AppIcon.appiconset" folder into the "Images.xcassets" or \'93Assets.xcassets\'94  to install it.\
+It will be renamed to AppIcon-1 by Xcode, but you will then be able to delete AppIcon and use the newly installed icon set.\
+\
+In Target -> General, you can select which of the installed icon sets to use for your app.\
+\
+If you are distributing the app through one of the the App Stores, then you will need to upload the "iTunesArtwork@2x.jpg" file as the large icon when setting up your app in iTunes Connect. This is saved for you in the "iTunes Artwork images" folder in the same folder as your Xcode project file.\
+\
+If you are using AdHoc or Enterprise distribution for an iOS app through iTunes, you will also need to include the "iTunesArtwork" file. This has no file extension although it is really a png. Drag this file into your Xcode project - NOT into  "Images.xcassets" or \'93Assets.xcassets\'94, making sure that the app is checked in the "Add to targets" section.}

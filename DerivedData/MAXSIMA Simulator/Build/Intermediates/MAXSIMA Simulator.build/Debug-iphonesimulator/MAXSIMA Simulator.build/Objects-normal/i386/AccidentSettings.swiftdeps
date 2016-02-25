@@ -1,0 +1,165 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Reactors"
+- "UserSettings"
+provides-nominal:
+- "O17MAXSIMA_Simulator8Reactors"
+- "C17MAXSIMA_Simulator12UserSettings"
+provides-member:
+- ["O17MAXSIMA_Simulator8Reactors", ""]
+- ["C17MAXSIMA_Simulator12UserSettings", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "Reactors"
+- !private "StringLiteralType"
+- "Double"
+- "IntegerLiteralType"
+- "=="
+- !private "~="
+- "Int"
+- "String"
+- "FloatLiteralType"
+- "UserSettings"
+depends-member:
+- !private ["PSs9AnyObject", "defaultNumberFailedSteamGeneratorsOvercooling"]
+- !private ["PSs9AnyObject", "defaultRampInterval"]
+- !private ["PSs9AnyObject", "defaultReactivityInsertionFractionBeta"]
+- !private ["PSs9AnyObject", "defaultReactivityReduction"]
+- !private ["PSs9AnyObject", "defaultSteamGeneratorPowerLoss"]
+- !private ["PSs9AnyObject", "defaultTransientDuration"]
+- !private ["PSs9AnyObject", "numberFailedSteamGeneratorsOvercooling"]
+- !private ["PSs9AnyObject", "rampInterval"]
+- !private ["PSs9AnyObject", "reactivityInsertionFractionBeta"]
+- !private ["PSs9AnyObject", "reactivityReduction"]
+- !private ["PSs9AnyObject", "selectedReactor"]
+- !private ["PSs9AnyObject", "steamGeneratorPowerLoss"]
+- !private ["PSs9AnyObject", "transientDuration"]
+- ["PSs9AnyObject", ""]
+- !private ["PSs22BidirectionalIndexType", "hashValue"]
+- !private ["PSs21BitwiseOperationsType", "hashValue"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["PSs11CVarArgType", "hashValue"]
+- !private ["PSs10Comparable", "hashValue"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs23CustomStringConvertible", "hashValue"]
+- !private ["PSs9Equatable", "Alfred"]
+- !private ["PSs9Equatable", "Electra"]
+- !private ["PSs9Equatable", "Myrrha"]
+- !private ["PSs9Equatable", "Sealer"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- ["PSs9Equatable", "hashValue"]
+- !private ["PSs9Equatable", "undefined"]
+- ["PSs9Equatable", ""]
+- !private ["PSs16ForwardIndexType", "hashValue"]
+- !private ["PSs8Hashable", "Alfred"]
+- !private ["PSs8Hashable", "Electra"]
+- !private ["PSs8Hashable", "Myrrha"]
+- !private ["PSs8Hashable", "Sealer"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- ["PSs8Hashable", "hashValue"]
+- !private ["PSs8Hashable", "undefined"]
+- ["PSs8Hashable", ""]
+- !private ["Si", "hashValue"]
+- !private ["PSs21IntegerArithmeticType", "hashValue"]
+- !private ["PSs25IntegerLiteralConvertible", "hashValue"]
+- !private ["PSs11IntegerType", "hashValue"]
+- !private ["PSs14MirrorPathType", "hashValue"]
+- !private ["CSo8NSObject", "deinit"]
+- !private ["CSo8NSString", "deinit"]
+- !private ["PSs21RandomAccessIndexType", "hashValue"]
+- !private ["VSs5Range", "deinit"]
+- ["O17MAXSIMA_Simulator8Reactors", "Alfred"]
+- ["O17MAXSIMA_Simulator8Reactors", "Electra"]
+- ["O17MAXSIMA_Simulator8Reactors", "Myrrha"]
+- ["O17MAXSIMA_Simulator8Reactors", "Sealer"]
+- ["O17MAXSIMA_Simulator8Reactors", "deinit"]
+- ["O17MAXSIMA_Simulator8Reactors", "hashValue"]
+- ["O17MAXSIMA_Simulator8Reactors", "undefined"]
+- !private ["PSs17SignedIntegerType", "hashValue"]
+- !private ["PSs16SignedNumberType", "hashValue"]
+- !private ["PSs10Strideable", "hashValue"]
+- !private ["SS", "deinit"]
+- ["C17MAXSIMA_Simulator12UserSettings", "Double"]
+- ["C17MAXSIMA_Simulator12UserSettings", "Int"]
+- ["C17MAXSIMA_Simulator12UserSettings", "Reactors"]
+- ["C17MAXSIMA_Simulator12UserSettings", "String"]
+- ["C17MAXSIMA_Simulator12UserSettings", "defaultNumberFailedSteamGeneratorsOvercooling"]
+- ["C17MAXSIMA_Simulator12UserSettings", "defaultRampInterval"]
+- ["C17MAXSIMA_Simulator12UserSettings", "defaultReactivityInsertionFractionBeta"]
+- ["C17MAXSIMA_Simulator12UserSettings", "defaultReactivityReduction"]
+- ["C17MAXSIMA_Simulator12UserSettings", "defaultSteamGeneratorPowerLoss"]
+- ["C17MAXSIMA_Simulator12UserSettings", "defaultTransientDuration"]
+- ["C17MAXSIMA_Simulator12UserSettings", "deinit"]
+- ["C17MAXSIMA_Simulator12UserSettings", "init"]
+- ["C17MAXSIMA_Simulator12UserSettings", "numberFailedSteamGeneratorsOvercooling"]
+- ["C17MAXSIMA_Simulator12UserSettings", "rampInterval"]
+- ["C17MAXSIMA_Simulator12UserSettings", "reactivityInsertionFractionBeta"]
+- ["C17MAXSIMA_Simulator12UserSettings", "reactivityReduction"]
+- ["C17MAXSIMA_Simulator12UserSettings", "selectedReactor"]
+- ["C17MAXSIMA_Simulator12UserSettings", "steamGeneratorPowerLoss"]
+- ["C17MAXSIMA_Simulator12UserSettings", "transientDuration"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "hashValue"]
+- !private ["PSs14_Incrementable", "hashValue"]
+- !private ["PSs22_IntegerArithmeticType", "hashValue"]
+- !private ["PSs12_IntegerType", "hashValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "hashValue"]
+- !private ["VSs26_OptionalNilComparisonType", "deinit"]
+- !private ["PSs22_RandomAccessAmbiguity", "hashValue"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "hashValue"]
+- !private ["PSs18_SignedIntegerType", "hashValue"]
+- !private ["PSs11_Strideable", "hashValue"]
+depends-nominal:
+- "PSs9AnyObject"
+- !private "PSs22BidirectionalIndexType"
+- !private "PSs21BitwiseOperationsType"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- !private "PSs11CVarArgType"
+- !private "PSs10Comparable"
+- !private "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- !private "PSs16ForwardIndexType"
+- "PSs8Hashable"
+- !private "Si"
+- !private "PSs21IntegerArithmeticType"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSs11IntegerType"
+- !private "PSs14MirrorPathType"
+- !private "CSo8NSObject"
+- !private "CSo8NSString"
+- !private "PSs21RandomAccessIndexType"
+- !private "VSs5Range"
+- "O17MAXSIMA_Simulator8Reactors"
+- !private "PSs17SignedIntegerType"
+- !private "PSs16SignedNumberType"
+- !private "PSs10Strideable"
+- !private "SS"
+- "C17MAXSIMA_Simulator12UserSettings"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
+- !private "PSs14_Incrementable"
+- !private "PSs22_IntegerArithmeticType"
+- !private "PSs12_IntegerType"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "VSs26_OptionalNilComparisonType"
+- !private "PSs22_RandomAccessAmbiguity"
+- !private "PSs12_Reflectable"
+- !private "PSs18_SignedIntegerType"
+- !private "PSs11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreImage.swiftmodule"
+interface-hash: "7bc34680644f40a39754c5efd2f27d48"

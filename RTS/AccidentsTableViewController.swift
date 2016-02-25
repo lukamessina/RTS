@@ -13,20 +13,25 @@ class AccidentsTableViewController: UITableViewController {
     // MARK: Properties
     
     var accidentList = [String]()
-    
+    var userSettings: UserSettings!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        navigationItem.title = "Select transient"
+        
         // Load list of accidents
         loadAccidentList()
+        
+        // Load saved user settings.
+        userSettings = loadUserSettings()
     }
     
     // Define list of accidents
     func loadAccidentList() {
         let accidentName1 = "UTOP (Unprotected Transient of Power)"
         let accidentName2 = "ULOHS (Unprotected Loss of Heat Sink)"
-        let accidentName3 = "Overcooling accident"
+        let accidentName3 = "Overcooling accident (not available)"
         accidentList += [accidentName1, accidentName2, accidentName3]
     }
     
@@ -67,12 +72,18 @@ class AccidentsTableViewController: UITableViewController {
         // Activate the segue corresponding to each accident
         let selectedAccident = indexPath.row + 1
         print("User selected accident \(selectedAccident)")
-        switch indexPath.row {
-        case 0:
-            performSegueWithIdentifier("showUtopViewController", sender: self)
+        switch indexPath.row + 1 {
         case 1:
-            performSegueWithIdentifier("showUlohsViewController", sender: self)
+            userSettings.accidentType = 1
+            saveUserSettings()
+            performSegueWithIdentifier("showUtopViewController", sender: self)
         case 2:
+            userSettings.accidentType = 2
+            saveUserSettings()
+            performSegueWithIdentifier("showUlohsViewController", sender: self)
+        case 3:
+            userSettings.accidentType = 3
+            saveUserSettings()
             performSegueWithIdentifier("showOvercoolingViewController", sender: self)
         default:
             print("There should not be other cases")
@@ -125,5 +136,19 @@ class AccidentsTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    // MARK: NSCoding
+    
+    // Save the user settings
+    func saveUserSettings() {
+        let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(userSettings, toFile: UserSettings.ArchiveURL.path!)
+        if !isSuccessfulSave {
+            print("Failed to save user settings...")
+        }
+    }
+
+    func loadUserSettings() -> UserSettings {
+        return NSKeyedUnarchiver.unarchiveObjectWithFile(UserSettings.ArchiveURL.path!) as! UserSettings
+    }
 
 }

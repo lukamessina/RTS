@@ -1,0 +1,23 @@
+version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
+options: "e5e5bf5a6c95fedad1edf6143db91f9e"
+build_time: [509721856, 573642000]
+inputs:
+  "/Users/lukamessina/work/reactor_app/RTS/RTS/UtopViewController.swift": [509708451, 0]
+  "/Users/lukamessina/work/reactor_app/RTS/RTS/ReactivityViewController.swift": [509674095, 0]
+  "/Users/lukamessina/work/reactor_app/RTS/Reactor.swift": [509677673, 0]
+  "/Users/lukamessina/work/reactor_app/RTS/RTS/ResultsViewController.swift": [509707670, 0]
+  "/Users/lukamessina/work/reactor_app/RTS/Constants.swift": [509665112, 0]
+  "/Users/lukamessina/work/reactor_app/RTS/UserSettings.swift": [509721856, 0]
+  "/Users/lukamessina/work/reactor_app/RTS/RTS/AccidentsTableViewController.swift": [509682696, 0]
+  "/Users/lukamessina/work/reactor_app/RTS/Cladding.swift": [509665441, 0]
+  "/Users/lukamessina/work/reactor_app/RTS/Fuel.swift": [509665390, 0]
+  "/Users/lukamessina/work/reactor_app/RTS/RTS/AppDelegate.swift": [509121483, 0]
+  "/Users/lukamessina/work/reactor_app/RTS/RTS/OvercoolingViewController.swift": [509674094, 0]
+  "/Users/lukamessina/work/reactor_app/RTS/RTS/WelcomeViewController.swift": [509665087, 0]
+  "/Users/lukamessina/work/reactor_app/RTS/GapGas.swift": [509665398, 0]
+  "/Users/lukamessina/work/reactor_app/RTS/RTS/SimulationViewController.swift": [509721832, 0]
+  "/Users/lukamessina/work/reactor_app/RTS/Material.swift": [509665250, 0]
+  "/Users/lukamessina/work/reactor_app/RTS/RTS/AccidentsTableViewCell.swift": [509135234, 0]
+  "/Users/lukamessina/work/reactor_app/RTS/Observables.swift": [509681468, 0]
+  "/Users/lukamessina/work/reactor_app/RTS/RTS/UlohsViewController.swift": [509674095, 0]
+  "/Users/lukamessina/work/reactor_app/RTS/Coolant.swift": [509665500, 0]
